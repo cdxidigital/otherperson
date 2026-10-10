@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "The Other Person in the Room",
+      "hasCanvas": false,
+      "bodyTextLen": 2161,
+      "bodyTextHash": "50f07da3825e228a08fc561e217f54c1eda5f8cf95aeeeb6005ea22bb1bb75d6",
+      "bodyTextPrefix": "The other person EPISODES LISTEN THE BOOK PODCAST · LITERARY REL",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/bottom-nav.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "The Other Person in the Room",
+      "hasCanvas": false,
+      "bodyTextLen": 2102,
+      "bodyTextHash": "1f8694f69292ae2ef566558684b57cf755692f61470c31fbfe08826e5d37c5cf",
+      "bodyTextPrefix": "The other person MENU PODCAST · LITERARY RELEASE · PERTH The oth",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/bottom-nav-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/bottom-nav.json"
+}

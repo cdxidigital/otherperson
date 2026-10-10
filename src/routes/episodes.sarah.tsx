@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { SiteHeader } from "@/components/site-header";
+import { SiteBottomNav } from "@/components/site-bottom-nav";
 
 export const Route = createFileRoute("/episodes/sarah")({ component: SarahEpisode });
 
@@ -119,7 +120,7 @@ function SarahEpisode() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0c0b09] text-[#e7e1d4]">
+    <main className="min-h-screen bg-[#0c0b09] pb-24 text-[#e7e1d4]">
       <SiteHeader />
 
       <section className="grid gap-8 px-5 pb-10 md:grid-cols-12 md:px-10 md:pt-6">
@@ -171,6 +172,7 @@ function SarahEpisode() {
         <p className="mt-12 max-w-xl text-sm text-[#e7e1d4]/55">If worry or checking is affecting daily life, a GP or a qualified mental health professional can help assess what is happening. Lifeline 13 11 14. Beyond Blue 1300 22 4636.</p>
         <p className="mt-4 text-sm text-[#e7e1d4]/55">Next time: Marcus, and the landlord who wants everyone to stop asking for things.</p>
       </section>
+      <SiteBottomNav />
     </main>
   );
 }

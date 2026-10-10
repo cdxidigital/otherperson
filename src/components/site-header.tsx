@@ -5,7 +5,6 @@ const links = [
   { href: "/#episodes", label: "Episodes" },
   { href: "/episodes/sarah", label: "Listen" },
   { href: "/#book", label: "The book" },
-  { href: "/release", label: "Voices" },
 ];
 
 export function SiteHeader() {

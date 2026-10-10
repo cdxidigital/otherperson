@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/site-header";
+import { SiteBottomNav } from "@/components/site-bottom-nav";
 
 export const Route = createFileRoute("/release")({ component: ReleasePage });
 
@@ -222,7 +223,7 @@ function ReleasePage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0c0b09] text-[#e7e1d4]">
+    <main className="min-h-screen bg-[#0c0b09] pb-24 text-[#e7e1d4]">
       <SiteHeader />
 
       <section className="grid gap-12 px-5 py-12 md:grid-cols-12 md:px-10">
@@ -299,6 +300,7 @@ function ReleasePage() {
           <pre className="mt-6 max-w-3xl whitespace-pre-wrap bg-[#e7e1d4] p-6 font-display text-sm leading-relaxed text-[#14110c]">{doc}</pre>
         </section>
       )}
+      <SiteBottomNav />
     </main>
   );
 }

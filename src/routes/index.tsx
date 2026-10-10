@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { SiteHeader } from "@/components/site-header";
+import { SiteBottomNav } from "@/components/site-bottom-nav";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -35,7 +36,7 @@ function Home() {
   }
 
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-[#0c0b09] text-[#e7e1d4]">
+    <main className="relative min-h-screen overflow-x-hidden bg-[#0c0b09] pb-24 text-[#e7e1d4]">
       <div className="pointer-events-none fixed inset-0 opacity-[0.07] mix-blend-overlay" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.55'/></svg>\")" }} />
 
       <SiteHeader />
@@ -78,15 +79,9 @@ function Home() {
       <section id="episodes" className="border-t border-[#e7e1d4]/10 px-5 py-20 md:px-10">
         <div className="mb-10 flex items-end justify-between">
           <h2 className="font-display text-4xl md:text-6xl">Season one</h2>
-          <p className="hidden text-[11px] uppercase tracking-[0.22em] text-[#e7e1d4]/50 md:block">Twelve rooms. One prologue. One close.</p>
+          <p className="hidden text-[11px] uppercase tracking-[0.22em] text-[#e7e1d4]/50 md:block">Eleven rooms.</p>
         </div>
         <ul className="divide-y divide-[#e7e1d4]/10 border-y border-[#e7e1d4]/10">
-          <li className="grid grid-cols-12 items-baseline gap-3 py-5">
-            <span className="col-span-2 text-[#c4a574] md:col-span-1">00</span>
-            <span className="col-span-10 font-display text-2xl md:col-span-5">Prologue</span>
-            <span className="col-span-12 text-sm text-[#e7e1d4]/55 md:col-span-4">Adam James</span>
-            <span className="col-span-12 text-right text-[11px] uppercase tracking-[0.18em] text-[#e7e1d4]/45 md:col-span-2">Coming soon</span>
-          </li>
           {episodes.map((ep) => (
             <li key={ep.n}>
               {"live" in ep && ep.live ? (
@@ -147,8 +142,9 @@ function Home() {
 
       <footer className="border-t border-[#e7e1d4]/10 px-5 py-10 text-sm text-[#e7e1d4]/50 md:px-10">
         <p>If a conversation lands heavily: Lifeline 13 11 14 · Beyond Blue 1300 22 4636.</p>
-        <p className="mt-3">Adam James, host. Perth. <Link to="/release" className="text-[#c4a574]">Voice release</Link></p>
+        <p className="mt-3">Adam James, host. Perth.</p>
       </footer>
+      <SiteBottomNav />
     </main>
   );
 }
